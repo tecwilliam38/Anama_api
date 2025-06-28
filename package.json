@@ -1,13 +1,25 @@
 {
-  "name": "anama_api",
+  "main": "./src/index.js",
+  "keywords": [],
+  "name": "api_anama",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Api da rede br Anama",  
+  "type": "module",
   "scripts": {
+    "start": "node --watch src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "William Ferreira da Silva",
   "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "postgres": "^3.4.5"
+  }
 }
